@@ -15,7 +15,7 @@ object LetterFileIndexCounter
 		val sc = new SparkContext(conf)
 
 		// load the text from each file inside the input directory
-		val input = sc.wholeTextFiles("file:///home/user/Desktop/Cloud_Ask_2/Spark/Letter-File-Index-Counter/input/*")
+		val input = sc.wholeTextFiles("file:///home/user/Spark-Letter-File-Index-Counter/input/*")
 
 		// create key-value pairs for each textfile (key) and its words (value
 		val map_by_file = input.map(file_text => (file_text._1, file_text._2))
