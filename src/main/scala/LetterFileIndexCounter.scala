@@ -17,7 +17,7 @@ object LetterFileIndexCounter
 		// load the text from each file inside the input directory
 		val input = sc.wholeTextFiles("file:///home/user/Spark-Letter-File-Index-Counter/input/*")
 
-		// create key-value pairs for each textfile (key) and its words (value
+		// create key-value pairs for each textfile (key) and its words (value)
 		val map_by_file = input.map(file_text => (file_text._1, file_text._2))
 
 		// split the words from each file, map them by (letter, filename) 
