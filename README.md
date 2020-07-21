@@ -14,7 +14,10 @@ _(using RDD tuples)_
 * The previous results are mapped once again in a key-value pair so that the letter is the key of the pair like _`(letter, (filename, sum_of_occurences))`_
 * The pairs get reduced by the maximum of the occurency sums, so for each letter we have the maximum number of word occurences and the file with the most word occurences
 
+### Final results example
+![](output.png)
+
 ### Project Info
-* All the input files are located in the `input` directory with 20 files that contain a small phrase from ![Metamorphosis](https://www.gutenberg.org/files/5200/5200-h/5200-h.htm) by Franz Kafka.
+* All the input files are located in the `input` directory with 20 files that contain a small phrase from ![Metamorphosis](https://www.gutenberg.org/files/5200/5200-h/5200-h.htm) by Franz Kafka
 * The `input` directory is given in full path format, so you need to change that accordingly for your machine
 * Final results get presented as output when the execution is over, without being stored anywhere
