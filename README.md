@@ -18,7 +18,7 @@ _(using RDD tuples)_
 ![](output.png)
 
 ### Project Info
-* All the input files are located in the `input` directory with 20 files that contain a small phrase from ![Metamorphosis](https://www.gutenberg.org/files/5200/5200-h/5200-h.htm) by Franz Kafka
+* All the input files are located in the `input` directory with 20 files that contain a small phrase from Metamorphosis by Franz Kafka
 * The `input` directory is given in full path format, so you need to change that accordingly for your machine
 * Final results get presented as output when the execution is over, without being stored anywhere
 * Also check out the ![Hadoop implementation](https://github.com/Coursal/Hadoop-Letter-File-Index-Counter)
