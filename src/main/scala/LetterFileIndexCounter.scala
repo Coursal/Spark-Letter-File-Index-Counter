@@ -21,7 +21,7 @@ object LetterFileIndexCounter
 		val map_by_file = input.map(file_text => (file_text._1, file_text._2))
 
 		// split the words from each file, map them by (letter, filename) 
-		// and reduce the occurences of each letter for each file
+		// and reduce the occurrences of each letter for each file
 		val reduce_letter_file = map_by_file.flatMap(file_words => file_words._2.split("\\s+")
 								.map(word => ((file_words._1, word(0).toUpper), 1)))
 								.reduceByKey(_+_)
